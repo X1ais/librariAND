@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     return (
-        <Container className='mt-3'>
+        <Container className='mt-3 pb-5'>
             <Row>
                 <Col>
                     <Stack gap={4} className='mt-5'>
@@ -42,7 +42,6 @@ export default function Contact() {
                 </Col>
                 <Col className='mt-5 bg-body-tertiary p-3' style={{ borderRadius: "10px" }}>
                     <Form onSubmit={onSubmit}>
-                        {/* <input type="hidden" name="access_key" value="a902004f-a089-4840-8b78-3721833108f8" /> */}
 
                         <Row>
                             <Form.Group as={Col} className="mb-3">
