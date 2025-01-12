@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Stack, Form, Button } from 'react-bootstrap'
+import '../styles/Contact.css'
 
 export default function Contact() {
     const [result, setResult] = React.useState("");
@@ -67,10 +68,10 @@ export default function Contact() {
 
                         <Form.Group className="mb-3">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows='4' name='message' style={{ resize: 'none' }} required />
+                            <Form.Control as="textarea" rows='4' name='message' className='textarea' required />
                         </Form.Group>
 
-                        <Button type='submit' style={{ float: 'right' }}>Submit</Button>
+                        <Button type='submit'>Submit</Button>
                     </Form>
 
                     <span>{result}</span>

@@ -16,7 +16,7 @@ export default function Navigation() {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
                         <Nav.Link href="/contact">Contact</Nav.Link>
-                        <Nav.Link href="/messages">Messages</Nav.Link>
+                        <Nav.Link href="/testimonials">Testimonials</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

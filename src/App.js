@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
 import About from './components/About';
 import Contact from './components/Contact';
-import Messages from './components/Messages'
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Testimonials from './components/Testimonials';
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
       <Routes>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/messages' element={<Messages />} />
+        <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/' element={<Home />} />
       </Routes>
 
