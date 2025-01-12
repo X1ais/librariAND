@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Card } from 'react-bootstrap'
+import { Rating } from '@mui/material'
 
 export default class Testimonial extends Component {
     constructor(props) {
         super(props)
 
-        this.id = props.id
         this.name = props.name
+        this.rating = props.rating
         this.text = props.text
     }
 
@@ -14,7 +15,7 @@ export default class Testimonial extends Component {
         return (
             <Card>
                 <Card.Body>
-                    <Card.Title>{this.name}</Card.Title>
+                    <Card.Title>{this.name} <Rating value={this.rating} precision={0.5} readOnly /></Card.Title>
                     <Card.Text>{this.text}</Card.Text>
                 </Card.Body>
             </Card>
