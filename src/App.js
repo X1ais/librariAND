@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
 import About from './components/About';
 import Contact from './components/Contact';
-import Navigation from './components/Nav';
+import Messages from './components/Messages'
+import Navigation from './components/Navigation';
 
 export default function App() {
   return (
@@ -23,8 +24,4 @@ export default function App() {
 
     </Router>
   );
-}
-
-function Messages() {
-  return <h2>Messages</h2>
 }
