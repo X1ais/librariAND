@@ -14,7 +14,7 @@ export const Testimonial = (props) => {
 
     async function onDelete(id) {
         await testimonialApi.delete(id)
-        this.fetchTestimonials()
+        fetchTestimonials()
     }
 
     function editText() {
