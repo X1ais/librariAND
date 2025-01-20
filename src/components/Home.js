@@ -4,7 +4,7 @@ import { Container, Stack, Row, Col } from 'react-bootstrap'
 export default function Home() {
     return (
         <div>
-            <Container className='text-center'>
+            <Container className='text-center mt-4'>
                 <Stack gap={5}>
                     <h1>Librari<b>AND</b>: A New Direction Library Training and Consulting</h1>
                     <h3>Empowering A New Direction For Your Library And Community…</h3>

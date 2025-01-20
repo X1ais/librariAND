@@ -34,7 +34,7 @@ export const Testimonial = (props) => {
         <Card>
             <Card.Body>
                 <Card.Title className='mb-3'>
-                    {testimonial.name} - <i>{handleDate(testimonial.createdAt)}</i>
+                    {testimonial.name} | <i>{handleDate(testimonial.createdAt)}</i>
                     <IconButton aria-label='delete' onClick={() => onDelete(testimonial.id)}>
                         <ClearIcon />
                     </IconButton>

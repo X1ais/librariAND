@@ -6,8 +6,8 @@ export default function About() {
         <Container>
             <Stack direction='horizontal' gap={5}>
                 <Stack gap={5}>
-                    <Col className='mt-4'>
-                        <h1>Hey there, I'm Holly!</h1>
+                    <Col>
+                        <h1 className='my-4'>Hey there, I'm Holly!</h1>
                         <p>
                             I’ve been working in libraries for more than 15 years.  Most recently, I was the director of the Portneuf Library in Chubbuck,
                             Idaho. I have experience in both public libraries and university  libraries, as well as a variety of positions in the library
@@ -46,7 +46,7 @@ export default function About() {
                     <img
                         src='https://images.squarespace-cdn.com/content/v1/62ea8c36ba8f71542f1e52ca/3ebc3722-c8f3-4728-ba81-82aa0a540314/JacksonFamily-157+%281%29.jpg?format=1000w'
                         width="500px"
-                        alt='The owner, Holly Jackson'
+                        alt='Holly Jackson'
                     />
                 </Col>
             </Stack>

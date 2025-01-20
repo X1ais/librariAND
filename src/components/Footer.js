@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Stack } from 'react-bootstrap'
+import LargeWhiteLogo from '../resources/logo_large_white.png'
 import PrivacyPolicy from '../resources/LibrariAND+Website+Privacy+Policy.pdf'
 import FacebookIcon from '../resources/facebook-30.png'
 import InstagramIcon from '../resources/instagram-30.png'
@@ -14,7 +15,7 @@ export default function Footer() {
                     <div className='p-5'>
                         <img
                             className='d-block mx-auto img-fluid'
-                            src='https://images.squarespace-cdn.com/content/v1/62ea8c36ba8f71542f1e52ca/10a0a8ec-813a-4ffe-8ed6-dd75c8e1d310/logo_large_white.png?format=500w'
+                            src={LargeWhiteLogo}
                             width='225px'
                             alt='The librariAND logo.'
                         />

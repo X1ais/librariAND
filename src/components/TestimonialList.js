@@ -29,7 +29,7 @@ export default class Testimonials extends Component {
             <div>
                 <Container >
                     <div className='text-center m-4'>
-                        <h3>Testimonials</h3>
+                        <h1>Testimonials</h1>
                     </div>
 
                     <Row>
