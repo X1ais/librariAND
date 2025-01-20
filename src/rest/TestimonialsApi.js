@@ -38,6 +38,20 @@ class TestimonialApi {
 
     }
 
+    update = async (testimonial) => {
+        try {
+            const response = await fetch(`${ENDPOINT_URL}/${testimonial.id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(testimonial)
+            })
+        } catch (error) {
+            console.error("Error updating to API", error)
+        }
+    }
+
     delete = async (id) => {
         try {
             await fetch(`${ENDPOINT_URL}/${id}`, {

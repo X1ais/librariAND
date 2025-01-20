@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Form } from 'react-bootstrap'
-import Stars from './StarRating'
 import { testimonialApi } from '../rest/TestimonialsApi'
 
 export default class TestimonialForm extends Component {
@@ -11,7 +10,6 @@ export default class TestimonialForm extends Component {
 
         this.state = {
             name: '',
-            rating: 0,
             text: '',
         }
 
@@ -31,7 +29,8 @@ export default class TestimonialForm extends Component {
 
     handleSubmit = async (event) => {
         const testimonial = {
-            ...this.state
+            ...this.state,
+            createdAt: Date()
         }
         const data = await testimonialApi.post(event, testimonial)
 
@@ -47,10 +46,6 @@ export default class TestimonialForm extends Component {
     render() {
         return (
             <Form onSubmit={(event) => this.handleSubmit(event)}>
-                <Form.Group className='mb-3'>
-                    <Form.Label>Rating</Form.Label><br></br>
-                    <Form.Control as={Stars} defaultValue={0} handleRating={this.handleRating.bind(this)} />
-                </Form.Group>
 
                 <Form.Group className="mb-3">
                     <Form.Label>Name</Form.Label>

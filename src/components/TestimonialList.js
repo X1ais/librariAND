@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import '../styles/Testimonials.css'
 import TestimonialForm from './TestimonialForm'
 import { testimonialApi } from '../rest/TestimonialsApi'
-import { TestimonialFunc } from './TestimonialFunc'
+import { Testimonial } from './Testimonial'
 
 export default class Testimonials extends Component {
     state = {
@@ -11,6 +11,11 @@ export default class Testimonials extends Component {
     }
 
     componentDidMount() {
+        this.fetchTestimonials()
+    }
+
+    editTestimonial = async (testimonial) => {
+        await testimonialApi.update(testimonial)
         this.fetchTestimonials()
     }
 
@@ -32,12 +37,9 @@ export default class Testimonials extends Component {
                             {this.state.testimonials.map((testimonial) => (
                                 <
                                     div key={testimonial.id} className='mb-3'>
-                                    <TestimonialFunc
+                                    <Testimonial
                                         testimonial={testimonial}
-                                        id={testimonial.id}
-                                        name={testimonial.name}
-                                        rating={testimonial.rating}
-                                        text={testimonial.text}
+                                        editTestimonial={this.editTestimonial}
                                         fetchTestimonials={this.fetchTestimonials}
                                     />
                                 </div>

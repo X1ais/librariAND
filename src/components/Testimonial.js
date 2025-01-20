@@ -1,12 +1,13 @@
 import React, { useState, useRef } from 'react'
 import { Card, Row, Col } from 'react-bootstrap'
-import { Rating, IconButton } from '@mui/material'
+import { IconButton } from '@mui/material'
 import ClearIcon from '@mui/icons-material/Clear'
 import EditIcon from '@mui/icons-material/Edit';
 import { testimonialApi } from '../rest/TestimonialsApi'
 
-export const TestimonialFunc = (props) => {
-    const { testimonial, fetchTestimonials } = props
+export const Testimonial = (props) => {
+    const { testimonial, editTestimonial,
+        fetchTestimonials } = props
     const [isEditable, setIsEditable] = useState(false)
     const inputRef = useRef(null)
     var state = { ...testimonial }
@@ -25,12 +26,15 @@ export const TestimonialFunc = (props) => {
         state = { ...testimonial, text: e.target.value }
     }
 
+    function handleDate(e) {
+        return new Date(e).toDateString()
+    }
+
     return (
         <Card>
             <Card.Body>
                 <Card.Title className='mb-3'>
-                    {testimonial.name}
-                    <Rating value={testimonial.rating} readOnly />
+                    {testimonial.name} - <i>{handleDate(testimonial.createdAt)}</i>
                     <IconButton aria-label='delete' onClick={() => onDelete(testimonial.id)}>
                         <ClearIcon />
                     </IconButton>
@@ -46,6 +50,7 @@ export const TestimonialFunc = (props) => {
                                 onChange={(event) => handleText(event)}
                                 onBlur={() => {
                                     setIsEditable(false)
+                                    editTestimonial(state)
                                 }}>
                                 {testimonial.text}
                             </textarea>
