@@ -1,2 +1,25 @@
-Button { float: right; }
+button { 
+    float: right;
+    background-color: #266488;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d5a7e;
+}
+button:active {
+    background-color: #1a5272;
+}
+textarea {
+    resize: none;
+    width: 83vh;
+    border: none;
+}
 .textarea { resize: none; }
+.testimonials-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}

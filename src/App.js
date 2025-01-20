@@ -8,7 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
+import Testimonials from './components/TestimonialList';
 
 export default function App() {
   return (

@@ -5,9 +5,6 @@ import ContactForm from './ContactForm';
 
 export default function Contact() {
 
-
-
-
     return (
         <Container className='mt-3 pb-5'>
             <Row>
@@ -23,8 +20,6 @@ export default function Contact() {
                 </Col>
                 <Col className='mt-5 bg-body-tertiary p-3' style={{ borderRadius: "10px" }}>
                     <ContactForm />
-
-
 
                 </Col>
             </Row>

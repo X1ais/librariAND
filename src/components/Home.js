@@ -15,11 +15,9 @@ export default function Home() {
             <Container className='text-center'>
                 <Row>
                     <Col>
-                        <Stack gap={5}>
-                            <h3>WHAT IF I TOLD YOU I COULD HELP YOU ENHANCE YOUR LIBRARY SERVICES WITHOUT ADDING TO YOUR BURNOUT OR OVERWHELM?</h3>
-                            <p>LibrariAND has a single goal…to give your library and your community a new direction. We help educate and empower public librarians to modernize their systems, people, processes and goals so that they can impact lives and improve services in their communities. With our self-guided courses in addition to live trainings such as “Leadership at Every Level,” “Succession Planning Made Simple,” and “Being Friends With Your Board-Creating a Successful Board/Director Relationship” I am confident we have a training to support your library team!  </p>
-                            <button>GET STARTED TODAY!</button>
-                        </Stack>
+                        <h3 className='m-5'>WHAT IF I TOLD YOU I COULD HELP YOU ENHANCE YOUR LIBRARY SERVICES WITHOUT ADDING TO YOUR BURNOUT OR OVERWHELM?</h3>
+                        <p className='m-5'>LibrariAND has a single goal…to give your library and your community a new direction. We help educate and empower public librarians to modernize their systems, people, processes and goals so that they can impact lives and improve services in their communities. With our self-guided courses in addition to live trainings such as “Leadership at Every Level,” “Succession Planning Made Simple,” and “Being Friends With Your Board-Creating a Successful Board/Director Relationship” I am confident we have a training to support your library team!  </p>
+                        <button>GET STARTED TODAY!</button>
                     </Col>
                     <Col>
                         <img

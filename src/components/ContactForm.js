@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Row, Col } from 'react-bootstrap'
 
 export default function ContactForm() {
     const [result, setResult] = React.useState("");
@@ -58,7 +58,7 @@ export default function ContactForm() {
             </Form.Group>
 
             <span>{result}</span>
-            <Button type='submit'>Submit</Button>
+            <button type='submit'>Submit</button>
         </Form>
 
 
